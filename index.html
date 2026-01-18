@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   background: #ffd6e8;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
   color: #660033;
 }
 
@@ -21,7 +20,7 @@ body {
   max-width: 400px;
   background: #fff0f6;
   border-radius: 25px;
-  margin: 30px auto;
+  margin: 25px auto;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
@@ -54,7 +53,7 @@ p {
 /* cake */
 .cake {
   width: 160px;
-  margin: 35px auto 10px; /* moved down */
+  margin: 35px auto 15px;
   position: relative;
 }
 
@@ -109,6 +108,16 @@ button {
   font-style: italic;
 }
 
+.video-box {
+  margin-top: 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+  border: 3px solid #ff9fcf;
+}
+
 audio {
   display: none;
 }
@@ -131,21 +140,18 @@ audio {
   <div class="name">Jelyn 🎀</div>
 
   <p>
-    Today is a celebration of you, not just because it’s your birthday,
-    but because of the kind of person you are. You have a heart that
-    listens, understands, and stays—especially when things aren’t easy.
-    I want you to know how deeply grateful I am for you.
-    <br><br>
+    Today is a celebration of you—not just because it’s your birthday,
+    but because of the comfort, kindness, and strength you give so freely.
     During my lowest moments, when everything felt heavy and uncertain,
-    you were there. You didn’t have to fix anything or say perfect words—
-    your presence alone meant more than you’ll ever realize. You stayed,
-    you listened, and you cared, and that made all the difference.
+    you stayed. You listened. You cared. And that meant more to me than
+    words can ever fully explain.
     <br><br>
-    On your special day, I hope you feel even a fraction of the love,
-    warmth, and comfort you’ve given to others. You deserve happiness,
-    peace, and beautiful moments today and always.
+    I hope today reminds you of how deeply appreciated you are.
+    You deserve happiness that feels gentle, love that feels safe,
+    and moments that feel like home.
   </p>
 
+  <!-- 🎂 Cake -->
   <div class="cake">
     <div class="candle" style="left:40px"><div class="flame"></div></div>
     <div class="candle" style="left:75px"><div class="flame"></div></div>
@@ -155,12 +161,20 @@ audio {
     <div class="layer"></div>
   </div>
 
+  <!-- 🎥 VIDEO SECTION -->
+  <div class="video-box">
+    <!-- PUT YOUR VIDEO FILE NAME HERE -->
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
   <button onclick="showWish()">Make a Wish ✨</button>
 
   <div id="wish">
-    Thank you for being you, Jelyn.
-    May this year bring you the same kindness and light
-    that you’ve shared with me 🤍
+    Thank you for being my safe place when I needed one.
+    May this year return every kindness you’ve given 🤍
   </div>
 
 </div>
