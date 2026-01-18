@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Jelyn</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #ffd6e8;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  color: #660033;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: #fff0f6;
+  border-radius: 25px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff9fcf;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+.name {
+  font-size: 30px;
+  color: #cc0066;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* cake */
+.cake {
+  width: 160px;
+  margin: 35px auto 10px; /* moved down */
+  position: relative;
+}
+
+.layer {
+  width: 100%;
+  height: 40px;
+  background: #ff9fcf;
+  border-radius: 20px;
+}
+
+.layer.top {
+  width: 120px;
+  height: 35px;
+  margin: auto;
+  margin-bottom: -10px;
+}
+
+/* candles */
+.candle {
+  width: 8px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  top: -25px;
+  border-radius: 4px;
+}
+
+.flame {
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -2px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff7eb6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#wish {
+  display: none;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+audio {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 PUT YOUR SONG FILE NAME HERE -->
+<audio id="music">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- 🖼️ PUT HER IMAGE FILE NAME HERE -->
+  <img src="image.jpg">
+
+  <h1>Happy Birthday</h1>
+  <div class="name">Jelyn 🎀</div>
+
+  <p>
+    Today is a celebration of you, not just because it’s your birthday,
+    but because of the kind of person you are. You have a heart that
+    listens, understands, and stays—especially when things aren’t easy.
+    I want you to know how deeply grateful I am for you.
+    <br><br>
+    During my lowest moments, when everything felt heavy and uncertain,
+    you were there. You didn’t have to fix anything or say perfect words—
+    your presence alone meant more than you’ll ever realize. You stayed,
+    you listened, and you cared, and that made all the difference.
+    <br><br>
+    On your special day, I hope you feel even a fraction of the love,
+    warmth, and comfort you’ve given to others. You deserve happiness,
+    peace, and beautiful moments today and always.
+  </p>
+
+  <div class="cake">
+    <div class="candle" style="left:40px"><div class="flame"></div></div>
+    <div class="candle" style="left:75px"><div class="flame"></div></div>
+    <div class="candle" style="left:110px"><div class="flame"></div></div>
+
+    <div class="layer top"></div>
+    <div class="layer"></div>
+  </div>
+
+  <button onclick="showWish()">Make a Wish ✨</button>
+
+  <div id="wish">
+    Thank you for being you, Jelyn.
+    May this year bring you the same kindness and light
+    that you’ve shared with me 🤍
+  </div>
+
+</div>
+
+<script>
+function showWish() {
+  document.getElementById("wish").style.display = "block";
+  document.getElementById("music").play();
+}
+</script>
+
+</body>
+</html>
